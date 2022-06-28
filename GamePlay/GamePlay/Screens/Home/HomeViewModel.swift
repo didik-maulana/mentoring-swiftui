@@ -1,5 +1,5 @@
 //
-//  GameViewModel.swift
+//  HomeViewModel.swift
 //  GamePlay
 //
 //  Created by Didik on 25/06/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class GameViewModel {
+class HomeViewModel {
     let gameList: [Game] = [
             Game(
                 id: 1,

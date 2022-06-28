@@ -27,9 +27,8 @@ struct GameItemView: View {
             
             VStack(alignment: .leading, spacing: 8) {
                 Text(data.name)
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color("tundora"))
+                    .font(.latoBold(fontSize: 20))
+                    .foregroundColor(.tundora)
                     .frame(
                         maxWidth: .infinity,
                         alignment: .leading
@@ -37,19 +36,14 @@ struct GameItemView: View {
                     .lineLimit(1)
                 
                 Text(data.genre)
-                    .font(.body)
-                    .foregroundColor(.gray)
+                    .font(.latoLight(fontSize: 16))
+                    .foregroundColor(.tundora)
                     .lineLimit(1)
                 
-                HStack(alignment: .top, spacing: 4) {
-                    Image(systemName: "star.fill")
-                        .foregroundColor(Color("orange"))
-                    
-                    Text(String(format: "%.1f", data.rating))
-                        .font(.body)
-                        .foregroundColor(.black)
-                        .lineLimit(1)
-                }
+                RatingView(
+                    rating: data.rating,
+                    textColor: .tundora
+                )
             }
         }
     }
@@ -57,14 +51,26 @@ struct GameItemView: View {
 
 struct GameItemView_Previews: PreviewProvider {
     static var previews: some View {
-        GameItemView(
-            data: Game(
-                id: 9,
-                name: "Life is Strange",
-                image: "life-is-strange",
-                genre: "Adventure",
-                rating: 4.1
-            )
-        )
+        Group {
+            GameItemView(
+                data: Game(
+                    id: 9,
+                    name: "Life is Strange",
+                    image: "life-is-strange",
+                    genre: "Adventure",
+                    rating: 4.1
+                )
+            ).previewLayout(.sizeThatFits).preferredColorScheme(.light)
+            
+            GameItemView(
+                data: Game(
+                    id: 9,
+                    name: "Life is Strange",
+                    image: "life-is-strange",
+                    genre: "Adventure",
+                    rating: 4.1
+                )
+            ).previewLayout(.sizeThatFits).preferredColorScheme(.dark)
+        }
     }
 }

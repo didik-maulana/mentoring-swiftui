@@ -7,24 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461B6EE5286AA9D3001AF054 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 461B6EE1286AA9D3001AF054 /* Lato-Light.ttf */; };
+		461B6EE6286AA9D3001AF054 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 461B6EE2286AA9D3001AF054 /* Lato-Italic.ttf */; };
+		461B6EE7286AA9D3001AF054 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 461B6EE3286AA9D3001AF054 /* Lato-Regular.ttf */; };
+		461B6EE8286AA9D3001AF054 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 461B6EE4286AA9D3001AF054 /* Lato-Bold.ttf */; };
+		461B6EEC286AABC3001AF054 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461B6EEB286AABC3001AF054 /* Font+Ext.swift */; };
+		461B6EEE286AAC53001AF054 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461B6EED286AAC53001AF054 /* Color+Ext.swift */; };
+		461B6EF4286AB2F0001AF054 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461B6EF3286AB2F0001AF054 /* RatingView.swift */; };
+		461B6EF6286AB4B3001AF054 /* BannerGameItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461B6EF5286AB4B3001AF054 /* BannerGameItemView.swift */; };
 		46CE363128673FB50026D54B /* GamePlayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE363028673FB50026D54B /* GamePlayApp.swift */; };
-		46CE363328673FB50026D54B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE363228673FB50026D54B /* ContentView.swift */; };
+		46CE363328673FB50026D54B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE363228673FB50026D54B /* HomeScreen.swift */; };
 		46CE363528673FB60026D54B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CE363428673FB60026D54B /* Assets.xcassets */; };
 		46CE363828673FB60026D54B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46CE363728673FB60026D54B /* Preview Assets.xcassets */; };
 		46CE3645286749F90026D54B /* GameItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE3644286749F90026D54B /* GameItemView.swift */; };
 		46CE364728674D350026D54B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE364628674D350026D54B /* Game.swift */; };
-		46CE364928674DC20026D54B /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE364828674DC20026D54B /* GameViewModel.swift */; };
+		46CE364928674DC20026D54B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE364828674DC20026D54B /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		461B6EE1286AA9D3001AF054 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		461B6EE2286AA9D3001AF054 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		461B6EE3286AA9D3001AF054 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		461B6EE4286AA9D3001AF054 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		461B6EE9286AAAAD001AF054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		461B6EEB286AABC3001AF054 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
+		461B6EED286AAC53001AF054 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		461B6EF3286AB2F0001AF054 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		461B6EF5286AB4B3001AF054 /* BannerGameItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerGameItemView.swift; sourceTree = "<group>"; };
 		46CE362D28673FB50026D54B /* GamePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CE363028673FB50026D54B /* GamePlayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayApp.swift; sourceTree = "<group>"; };
-		46CE363228673FB50026D54B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46CE363228673FB50026D54B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		46CE363428673FB60026D54B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46CE363728673FB60026D54B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46CE3644286749F90026D54B /* GameItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemView.swift; sourceTree = "<group>"; };
 		46CE364628674D350026D54B /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		46CE364828674DC20026D54B /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		46CE364828674DC20026D54B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +55,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		461B6EE0286AA9B0001AF054 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				461B6EE4286AA9D3001AF054 /* Lato-Bold.ttf */,
+				461B6EE2286AA9D3001AF054 /* Lato-Italic.ttf */,
+				461B6EE1286AA9D3001AF054 /* Lato-Light.ttf */,
+				461B6EE3286AA9D3001AF054 /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		461B6EEA286AABAE001AF054 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				461B6EEB286AABC3001AF054 /* Font+Ext.swift */,
+				461B6EED286AAC53001AF054 /* Color+Ext.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		461B6EEF286AAD19001AF054 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				46CE3644286749F90026D54B /* GameItemView.swift */,
+				461B6EF3286AB2F0001AF054 /* RatingView.swift */,
+				461B6EF5286AB4B3001AF054 /* BannerGameItemView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		461B6EF0286AAD2D001AF054 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46CE364628674D350026D54B /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		461B6EF9286AB648001AF054 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				46CE363028673FB50026D54B /* GamePlayApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		461B6EFA286AB686001AF054 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				461B6EFB286AB68C001AF054 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		461B6EFB286AB68C001AF054 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				46CE363228673FB50026D54B /* HomeScreen.swift */,
+				46CE364828674DC20026D54B /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		46CE362428673FB50026D54B = {
 			isa = PBXGroup;
 			children = (
@@ -57,13 +137,15 @@
 		46CE362F28673FB50026D54B /* GamePlay */ = {
 			isa = PBXGroup;
 			children = (
-				46CE363028673FB50026D54B /* GamePlayApp.swift */,
-				46CE364628674D350026D54B /* Game.swift */,
-				46CE363228673FB50026D54B /* ContentView.swift */,
-				46CE3644286749F90026D54B /* GameItemView.swift */,
-				46CE364828674DC20026D54B /* GameViewModel.swift */,
+				461B6EE9286AAAAD001AF054 /* Info.plist */,
 				46CE363428673FB60026D54B /* Assets.xcassets */,
+				461B6EF9286AB648001AF054 /* App */,
+				461B6EEF286AAD19001AF054 /* Components */,
+				461B6EEA286AABAE001AF054 /* DesignSystem */,
+				461B6EE0286AA9B0001AF054 /* Fonts */,
+				461B6EF0286AAD2D001AF054 /* Model */,
 				46CE363628673FB60026D54B /* Preview Content */,
+				461B6EFA286AB686001AF054 /* Screens */,
 			);
 			path = GamePlay;
 			sourceTree = "<group>";
@@ -134,7 +216,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461B6EE5286AA9D3001AF054 /* Lato-Light.ttf in Resources */,
+				461B6EE8286AA9D3001AF054 /* Lato-Bold.ttf in Resources */,
 				46CE363828673FB60026D54B /* Preview Assets.xcassets in Resources */,
+				461B6EE7286AA9D3001AF054 /* Lato-Regular.ttf in Resources */,
+				461B6EE6286AA9D3001AF054 /* Lato-Italic.ttf in Resources */,
 				46CE363528673FB60026D54B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,10 +232,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46CE363328673FB50026D54B /* ContentView.swift in Sources */,
+				46CE363328673FB50026D54B /* HomeScreen.swift in Sources */,
+				461B6EEE286AAC53001AF054 /* Color+Ext.swift in Sources */,
 				46CE363128673FB50026D54B /* GamePlayApp.swift in Sources */,
+				461B6EF4286AB2F0001AF054 /* RatingView.swift in Sources */,
+				461B6EF6286AB4B3001AF054 /* BannerGameItemView.swift in Sources */,
+				461B6EEC286AABC3001AF054 /* Font+Ext.swift in Sources */,
 				46CE3645286749F90026D54B /* GameItemView.swift in Sources */,
-				46CE364928674DC20026D54B /* GameViewModel.swift in Sources */,
+				46CE364928674DC20026D54B /* HomeViewModel.swift in Sources */,
 				46CE364728674D350026D54B /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +373,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GamePlay/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GamePlay/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,6 +403,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GamePlay/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GamePlay/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
