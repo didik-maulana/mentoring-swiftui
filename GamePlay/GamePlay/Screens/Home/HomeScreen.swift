@@ -33,7 +33,9 @@ struct HomeScreen: View {
                         .foregroundColor(.black)
                     
                     ForEach(viewModel.gameList) { item in
-                        GameItemView(data: item)
+                        NavigationLink(destination: GameDetailScreen(game: item)) {
+                            GameItemView(data: item)
+                        }
                     }
                 }
                 .padding(.all, 12)

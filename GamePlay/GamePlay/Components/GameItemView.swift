@@ -52,25 +52,13 @@ struct GameItemView: View {
 struct GameItemView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            GameItemView(
-                data: Game(
-                    id: 9,
-                    name: "Life is Strange",
-                    image: "life-is-strange",
-                    genre: "Adventure",
-                    rating: 4.1
-                )
-            ).previewLayout(.sizeThatFits).preferredColorScheme(.light)
+            GameItemView(data: Game.dummyData)
+                .previewLayout(.sizeThatFits)
+                .preferredColorScheme(.light)
             
-            GameItemView(
-                data: Game(
-                    id: 9,
-                    name: "Life is Strange",
-                    image: "life-is-strange",
-                    genre: "Adventure",
-                    rating: 4.1
-                )
-            ).previewLayout(.sizeThatFits).preferredColorScheme(.dark)
+            GameItemView(data: Game.dummyData)
+                .previewLayout(.sizeThatFits)
+                .preferredColorScheme(.dark)
         }
     }
 }

@@ -45,14 +45,6 @@ struct BannerGameItemView: View {
 
 struct BannerGameItemView_Previews: PreviewProvider {
     static var previews: some View {
-        BannerGameItemView(
-            game: Game(
-                id: 9,
-                name: "Life is Strange",
-                image: "life-is-strange",
-                genre: "Adventure",
-                rating: 4.1
-            )
-        ).previewLayout(.fixed(width: 480, height: 320))
+        BannerGameItemView(game: Game.dummyData).previewLayout(.fixed(width: 480, height: 320))
     }
 }
