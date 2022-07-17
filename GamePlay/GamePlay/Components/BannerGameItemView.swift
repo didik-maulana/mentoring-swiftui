@@ -13,8 +13,7 @@ struct BannerGameItemView: View {
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
-            Image(game.image)
-                .resizable()
+            CustomImage(imageURL: game.imageURL)
             
             Rectangle()
                 .foregroundColor(.clear)
@@ -38,7 +37,7 @@ struct BannerGameItemView: View {
             }
             .padding([.leading, .bottom], 16)
         }
-        .frame(maxWidth: 340)
+        .frame(width: 340)
         .cornerRadius(12)
     }
 }

@@ -13,8 +13,7 @@ struct GameItemView: View {
     
     var body: some View {
         HStack(alignment: .top, spacing: 16) {
-            Image(data.image)
-                .resizable()
+            CustomImage(imageURL: data.imageURL)
                 .frame(width: 100, height: 100)
                 .aspectRatio(contentMode: .fill)
                 .cornerRadius(12)
@@ -35,7 +34,7 @@ struct GameItemView: View {
                     )
                     .lineLimit(1)
                 
-                Text(data.genre)
+                Text(data.genreText)
                     .font(.latoLight(fontSize: 16))
                     .foregroundColor(.tundora)
                     .lineLimit(1)

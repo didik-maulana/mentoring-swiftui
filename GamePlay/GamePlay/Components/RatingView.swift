@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RatingView: View {
-    let rating: Double
+    let rating: Double?
     let textColor: Color
     
     var body: some View {
@@ -16,7 +16,7 @@ struct RatingView: View {
             Image(systemName: "star.fill")
                 .foregroundColor(.orangeLight)
             
-            Text(String(format: "%.1f", rating))
+            Text(String(format: "%.1f", rating ?? 0))
                 .font(.latoRegular(fontSize: 18))
                 .foregroundColor(textColor)
                 .lineLimit(1)

@@ -13,8 +13,7 @@ struct GameDetailScreen: View {
     
     var body: some View {
         ScrollView {
-            Image(game.image)
-                .resizable()
+            CustomImage(imageURL: game.imageURL)
                 .frame(height: 200)
             
             VStack(alignment: .leading, spacing: 4) {
@@ -22,7 +21,7 @@ struct GameDetailScreen: View {
                     .font(.latoBold(fontSize: 20))
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
-                Text(game.genre)
+                Text(game.genreText)
                     .font(.latoLight(fontSize: 16))
                     .foregroundColor(.tundora)
                     .lineLimit(1)
@@ -38,7 +37,7 @@ struct GameDetailScreen: View {
                 Divider()
                     .padding(.top, 12)
                 
-                Text(game.description)
+                Text(game.description ?? "")
                     .font(.latoRegular(fontSize: 16))
                     .foregroundColor(.tundora)
                     .padding(.vertical, 16)
