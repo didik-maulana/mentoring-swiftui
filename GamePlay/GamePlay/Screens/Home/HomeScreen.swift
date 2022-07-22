@@ -31,7 +31,7 @@ struct HomeScreen: View {
                         ScrollView(.horizontal, showsIndicators: false) {
                             LazyHStack(alignment: .top, spacing: 16) {
                                 ForEach(viewModel.popularGames) { item in
-                                    NavigationLink(destination: GameDetailScreen(game: item)) {
+                                    NavigationLink(destination: GameDetailScreen(gameID: item.id)) {
                                         BannerGameItemView(game: item)
                                     }
                                 }
@@ -54,7 +54,7 @@ struct HomeScreen: View {
                             )
                     } else {
                         ForEach(viewModel.topRatedGames) { item in
-                            NavigationLink(destination: GameDetailScreen(game: item)) {
+                            NavigationLink(destination: GameDetailScreen(gameID: item.id)) {
                                 GameItemView(data: item)
                             }
                         }

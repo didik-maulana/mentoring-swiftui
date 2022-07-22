@@ -20,7 +20,7 @@ struct Game: Identifiable, Decodable {
         case id
         case slug
         case name
-        case description
+        case description = "description_raw"
         case backgroundImage = "background_image"
         case genres
         case rating

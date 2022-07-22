@@ -9,13 +9,13 @@ import Combine
 import Foundation
 
 class HomeViewModel: ObservableObject {
-    @Published var popularGames: [Game] = []
-    @Published var topRatedGames: [Game] = []
+    @Published private (set) var popularGames: [Game] = []
+    @Published private (set) var topRatedGames: [Game] = []
     
-    @Published var isLoadingPopularGames: Bool = false
-    @Published var isLoadingTopRatedGames: Bool = false
+    @Published private (set) var isLoadingPopularGames: Bool = false
+    @Published private (set) var isLoadingTopRatedGames: Bool = false
     
-    @Published var errorMessage: String? = nil
+    @Published private (set) var errorMessage: String? = nil
     
     private let apiService = APIService()
     private var cancelables: Set<AnyCancellable> = []
