@@ -6,34 +6,25 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct CustomImage: View {
     
     let imageURL: URL?
     
     var body: some View {
-        AsyncImage(url: imageURL) { phase in
-            switch phase {
-            case .empty:
-                ZStack {
-                    Color.gray.opacity(0.2)
-                    
-                    ProgressView()
-                        .progressViewStyle(.circular)
-                }
-            case .success(let image):
-                image.resizable()
-            case .failure:
+        WebImage(url: imageURL)
+            .resizable()
+            .placeholder {
                 ZStack {
                     Color.gray.opacity(0.2)
                     
                     Text("NO IMAGE")
                         .foregroundColor(.tundora)
                 }
-            default:
-                EmptyView()
             }
-        }
+            .indicator(.activity)
+            .transition(.fade(duration: 0.5))
     }
 }
 

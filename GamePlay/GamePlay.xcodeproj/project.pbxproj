@@ -28,6 +28,7 @@
 		9C5DC8DA28966B9100B59B3A /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5DC8D928966B9100B59B3A /* ProfileScreen.swift */; };
 		9C5DC8DD28966B9E00B59B3A /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5DC8DC28966B9E00B59B3A /* FavoritesScreen.swift */; };
 		9C5DC8DF28966BAC00B59B3A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5DC8DE28966BAC00B59B3A /* MainTabView.swift */; };
+		9C5DC8E228966D2E00B59B3A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9C5DC8E128966D2E00B59B3A /* SDWebImageSwiftUI */; };
 		9C7AEF1B288A90F900C63567 /* GameDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7AEF1A288A90F900C63567 /* GameDetailViewModel.swift */; };
 		9CB12572287FF02400021936 /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12571287FF02400021936 /* CustomImage.swift */; };
 		9CB12575287FF19100021936 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12574287FF19100021936 /* APIService.swift */; };
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5DC8E228966D2E00B59B3A /* SDWebImageSwiftUI in Frameworks */,
 				9C5DC8D628966A2D00B59B3A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +242,7 @@
 			name = GamePlay;
 			packageProductDependencies = (
 				9C5DC8D528966A2D00B59B3A /* Alamofire */,
+				9C5DC8E128966D2E00B59B3A /* SDWebImageSwiftUI */,
 			);
 			productName = GamePlay;
 			productReference = 46CE362D28673FB50026D54B /* GamePlay.app */;
@@ -271,6 +274,7 @@
 			mainGroup = 46CE362428673FB50026D54B;
 			packageReferences = (
 				9C5DC8D428966A2D00B59B3A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9C5DC8E028966D2E00B59B3A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 46CE362E28673FB50026D54B /* Products */;
 			projectDirPath = "";
@@ -535,6 +539,14 @@
 				kind = branch;
 			};
 		};
+		9C5DC8E028966D2E00B59B3A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -542,6 +554,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9C5DC8D428966A2D00B59B3A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		9C5DC8E128966D2E00B59B3A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C5DC8E028966D2E00B59B3A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
