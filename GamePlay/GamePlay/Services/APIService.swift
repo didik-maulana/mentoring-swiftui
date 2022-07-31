@@ -5,6 +5,7 @@
 //  Created by Didik Maulana Ardiansyah on 14/07/22.
 //
 
+import Alamofire
 import Combine
 import Foundation
 
@@ -14,54 +15,28 @@ class APIService {
         endpoint: String,
         params: [URLQueryItem]? = nil,
         type: D.Type
-    ) -> AnyPublisher<D, APIError> {
-        return Future<D, APIError> { completion in
-            // Creating mutable URL components
-            guard let url = URL(string: "https://api.rawg.io/api/\(endpoint)"),
-                  var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
-                completion(.failure(.invalidEndpoint))
+    ) -> AnyPublisher<D, Error> {
+        return Future<D, Error> { completion in
+            guard let url = URL(string: "https://api.rawg.io/api/\(endpoint)") else {
                 return
             }
             
-            // Add query parameter in URL
-            // Example: ?key=apiKey&category=top_rated
-            var queryItems: [URLQueryItem] = [
-                URLQueryItem(name: "key", value: "fe6e425621434f3390c554c30e670b38")
-            ]
-            if let params = params {
-                queryItems.append(contentsOf: params)
-            }
-            urlComponents.queryItems = queryItems
-
-            // Get final URL
-            guard let finalURL = urlComponents.url else {
-                completion(.failure(.invalidEndpoint))
-                return
+            var queryParamaters: Parameters = [:]
+            queryParamaters["key"] = "fe6e425621434f3390c554c30e670b38"
+            params?.forEach { urlQuery in
+                queryParamaters[urlQuery.name] = urlQuery.value
             }
             
-            // Create request API task with callback response
-            let requestTask = URLSession.shared.dataTask(with: finalURL) { (data, response, error) in
-                // Check if error
-                guard error == nil else {
-                    completion(.failure(.apiError))
-                    return
+            AF.request(url, method: .get, parameters: queryParamaters)
+                .validate()
+                .responseDecodable(of: type.self) { response in
+                    switch response.result {
+                    case .success(let result):
+                        completion(.success(result))
+                    case .failure(let error):
+                        completion(.failure(error))
+                    }
                 }
-                
-                // Check if data exists
-                guard let data = data else {
-                    completion(.failure(.invalidData))
-                    return
-                }
-                
-                // Decode JSON to swift object
-                do {
-                    let decodedResponse = try JSONDecoder().decode(D.self, from: data)
-                    completion(.success(decodedResponse))
-                } catch {
-                    completion(.failure(.serializationError))
-                }
-            }
-            requestTask.resume() // Start requestTask to call API
-        }.eraseToAnyPublisher() // type-eraser publisher
+        }.eraseToAnyPublisher()
     }
 }
