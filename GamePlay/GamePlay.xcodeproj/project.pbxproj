@@ -24,6 +24,10 @@
 		46CE364928674DC20026D54B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE364828674DC20026D54B /* HomeViewModel.swift */; };
 		9C4865BF28794A8600F0BC0B /* GameDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4865BE28794A8600F0BC0B /* GameDetailScreen.swift */; };
 		9C4865C32879571100F0BC0B /* Game+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4865C22879571100F0BC0B /* Game+Dummy.swift */; };
+		9C48DF4628A924E9001ADEAA /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C48DF4528A924E9001ADEAA /* PrimaryButton.swift */; };
+		9C48DF4928A9264E001ADEAA /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C48DF4828A9264E001ADEAA /* LoginScreen.swift */; };
+		9C48DF4C28A92A36001ADEAA /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C48DF4B28A92A36001ADEAA /* RegisterScreen.swift */; };
+		9C48DF4F28A930BB001ADEAA /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C48DF4E28A930BB001ADEAA /* WelcomeScreen.swift */; };
 		9C5DC8D628966A2D00B59B3A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9C5DC8D528966A2D00B59B3A /* Alamofire */; };
 		9C5DC8DA28966B9100B59B3A /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5DC8D928966B9100B59B3A /* ProfileScreen.swift */; };
 		9C5DC8DD28966B9E00B59B3A /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5DC8DC28966B9E00B59B3A /* FavoritesScreen.swift */; };
@@ -56,6 +60,10 @@
 		46CE364828674DC20026D54B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9C4865BE28794A8600F0BC0B /* GameDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailScreen.swift; sourceTree = "<group>"; };
 		9C4865C22879571100F0BC0B /* Game+Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+Dummy.swift"; sourceTree = "<group>"; };
+		9C48DF4528A924E9001ADEAA /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		9C48DF4828A9264E001ADEAA /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		9C48DF4B28A92A36001ADEAA /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		9C48DF4E28A930BB001ADEAA /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		9C5DC8D928966B9100B59B3A /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		9C5DC8DC28966B9E00B59B3A /* FavoritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreen.swift; sourceTree = "<group>"; };
 		9C5DC8DE28966BAC00B59B3A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -106,6 +114,7 @@
 				461B6EF3286AB2F0001AF054 /* RatingView.swift */,
 				461B6EF5286AB4B3001AF054 /* BannerGameItemView.swift */,
 				9CB12571287FF02400021936 /* CustomImage.swift */,
+				9C48DF4528A924E9001ADEAA /* PrimaryButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -130,6 +139,9 @@
 		461B6EFA286AB686001AF054 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				9C48DF4D28A930B7001ADEAA /* Welcome */,
+				9C48DF4A28A92A30001ADEAA /* Register */,
+				9C48DF4728A92644001ADEAA /* Login */,
 				9C4865BD28794A6F00F0BC0B /* Detail */,
 				9C5DC8DB28966B9800B59B3A /* Favorites */,
 				461B6EFB286AB68C001AF054 /* Home */,
@@ -197,6 +209,30 @@
 				9C7AEF1A288A90F900C63567 /* GameDetailViewModel.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		9C48DF4728A92644001ADEAA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9C48DF4828A9264E001ADEAA /* LoginScreen.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9C48DF4A28A92A30001ADEAA /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				9C48DF4B28A92A36001ADEAA /* RegisterScreen.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		9C48DF4D28A930B7001ADEAA /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				9C48DF4E28A930BB001ADEAA /* WelcomeScreen.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		9C5DC8D828966B8B00B59B3A /* Profile */ = {
@@ -308,6 +344,7 @@
 			files = (
 				46CE363328673FB50026D54B /* HomeScreen.swift in Sources */,
 				9C5DC8DD28966B9E00B59B3A /* FavoritesScreen.swift in Sources */,
+				9C48DF4628A924E9001ADEAA /* PrimaryButton.swift in Sources */,
 				9CB12577287FF31600021936 /* APIError.swift in Sources */,
 				461B6EEE286AAC53001AF054 /* Color+Ext.swift in Sources */,
 				9CB12572287FF02400021936 /* CustomImage.swift in Sources */,
@@ -316,12 +353,15 @@
 				461B6EF4286AB2F0001AF054 /* RatingView.swift in Sources */,
 				9C5DC8DA28966B9100B59B3A /* ProfileScreen.swift in Sources */,
 				461B6EF6286AB4B3001AF054 /* BannerGameItemView.swift in Sources */,
+				9C48DF4928A9264E001ADEAA /* LoginScreen.swift in Sources */,
 				461B6EEC286AABC3001AF054 /* Font+Ext.swift in Sources */,
 				9C4865BF28794A8600F0BC0B /* GameDetailScreen.swift in Sources */,
 				9C4865C32879571100F0BC0B /* Game+Dummy.swift in Sources */,
+				9C48DF4F28A930BB001ADEAA /* WelcomeScreen.swift in Sources */,
 				9CB12575287FF19100021936 /* APIService.swift in Sources */,
 				46CE3645286749F90026D54B /* GameItemView.swift in Sources */,
 				46CE364928674DC20026D54B /* HomeViewModel.swift in Sources */,
+				9C48DF4C28A92A36001ADEAA /* RegisterScreen.swift in Sources */,
 				9C7AEF1B288A90F900C63567 /* GameDetailViewModel.swift in Sources */,
 				46CE364728674D350026D54B /* Game.swift in Sources */,
 				9CB125792880003B00021936 /* GameListResponse.swift in Sources */,

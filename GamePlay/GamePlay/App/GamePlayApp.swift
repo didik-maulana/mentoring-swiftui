@@ -11,7 +11,7 @@ import SwiftUI
 struct GamePlayApp: App {
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            LoginScreen()
         }
     }
 }
