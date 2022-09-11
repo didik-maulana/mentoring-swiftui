@@ -22,7 +22,6 @@ struct GameDetailScreen: View {
                         width: UIScreen.main.bounds.width,
                         height: UIScreen.main.bounds.height,
                         alignment: .center)
-                    
             } else {
                 CustomImage(imageURL: viewModel.game?.imageURL)
                     .frame(height: 200)
@@ -44,6 +43,13 @@ struct GameDetailScreen: View {
                     
                     Link("Open in Browser", destination: (viewModel.game?.url)!)
                         .padding(.top, 8)
+                    
+                    PrimaryButton(
+                        title: "Add Favorite",
+                        onTapButtonAction: {
+                            viewModel.toggleFavorite()
+                        }
+                    ).padding(.top, 12)
                     
                     Divider()
                         .padding(.top, 12)

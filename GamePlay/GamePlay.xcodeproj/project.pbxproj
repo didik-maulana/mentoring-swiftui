@@ -40,6 +40,9 @@
 		9CB12575287FF19100021936 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12574287FF19100021936 /* APIService.swift */; };
 		9CB12577287FF31600021936 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB12576287FF31600021936 /* APIError.swift */; };
 		9CB125792880003B00021936 /* GameListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB125782880003B00021936 /* GameListResponse.swift */; };
+		9CB6246128CD740700AC7828 /* Favorite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6245F28CD740700AC7828 /* Favorite.xcdatamodeld */; };
+		9CB6246328CD745F00AC7828 /* FavoriteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6246228CD745F00AC7828 /* FavoriteService.swift */; };
+		9CB6246728CD858500AC7828 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6246628CD858500AC7828 /* FavoriteViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		9CB12574287FF19100021936 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		9CB12576287FF31600021936 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		9CB125782880003B00021936 /* GameListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListResponse.swift; sourceTree = "<group>"; };
+		9CB6246028CD740700AC7828 /* FavoriteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteModel.xcdatamodel; sourceTree = "<group>"; };
+		9CB6246228CD745F00AC7828 /* FavoriteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteService.swift; sourceTree = "<group>"; };
+		9CB6246628CD858500AC7828 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 			children = (
 				46CE364628674D350026D54B /* Game.swift */,
 				9CB125782880003B00021936 /* GameListResponse.swift */,
+				9CB6245F28CD740700AC7828 /* Favorite.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				9C5DC8DC28966B9E00B59B3A /* FavoritesScreen.swift */,
+				9CB6246628CD858500AC7828 /* FavoriteViewModel.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 			children = (
 				9CB12574287FF19100021936 /* APIService.swift */,
 				9CB12576287FF31600021936 /* APIError.swift */,
+				9CB6246228CD745F00AC7828 /* FavoriteService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -373,6 +382,7 @@
 				9C4865BF28794A8600F0BC0B /* GameDetailScreen.swift in Sources */,
 				9C4865C32879571100F0BC0B /* Game+Dummy.swift in Sources */,
 				9C48DF4F28A930BB001ADEAA /* WelcomeScreen.swift in Sources */,
+				9CB6246328CD745F00AC7828 /* FavoriteService.swift in Sources */,
 				9CB12575287FF19100021936 /* APIService.swift in Sources */,
 				46CE3645286749F90026D54B /* GameItemView.swift in Sources */,
 				46CE364928674DC20026D54B /* HomeViewModel.swift in Sources */,
@@ -380,7 +390,9 @@
 				9C97C75028BB9EB6006C2BE2 /* SearchViewModel.swift in Sources */,
 				9C7AEF1B288A90F900C63567 /* GameDetailViewModel.swift in Sources */,
 				46CE364728674D350026D54B /* Game.swift in Sources */,
+				9CB6246728CD858500AC7828 /* FavoriteViewModel.swift in Sources */,
 				9CB125792880003B00021936 /* GameListResponse.swift in Sources */,
+				9CB6246128CD740700AC7828 /* Favorite.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +629,19 @@
 			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9CB6245F28CD740700AC7828 /* Favorite.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9CB6246028CD740700AC7828 /* FavoriteModel.xcdatamodel */,
+			);
+			currentVersion = 9CB6246028CD740700AC7828 /* FavoriteModel.xcdatamodel */;
+			path = Favorite.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 46CE362528673FB50026D54B /* Project object */;
 }

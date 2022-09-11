@@ -15,6 +15,7 @@ class GameDetailViewModel: ObservableObject {
     @Published private (set) var errorMessage: String? = nil
     
     private let apiService = APIService()
+    private let favoriteService = FavoriteService.shared
     private var cancelables: Set<AnyCancellable> = []
     
     func loadGameDetail(gameID: Int) {
@@ -31,5 +32,11 @@ class GameDetailViewModel: ObservableObject {
             } receiveValue: { [weak self] response in
                 self?.game = response
             }.store(in: &cancelables)
+    }
+    
+    func toggleFavorite() {
+        guard let game = game else { return }
+        
+        favoriteService.addFavorite(game: game)
     }
 }
