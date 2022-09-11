@@ -15,6 +15,11 @@ struct MainTabView: View {
                     Label("Home", systemImage: "house")
                 }
             
+            SearchScreen()
+                .tabItem {
+                    Label("Search", systemImage: "magnifyingglass")
+                }
+            
             FavoritesScreen()
                 .tabItem {
                     Label("Favorites", systemImage: "heart")
